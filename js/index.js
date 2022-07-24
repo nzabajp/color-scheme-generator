@@ -3,6 +3,7 @@ const colorScheme = document.getElementById("color-scheme")
 const getColorBtn = document.getElementById("get-color-scheme-btn")
 const colorBlocks = document.getElementById("color-blocks")
 const colorNames = document.getElementById("color-names")
+const alertDiv = document.getElementById("alert")
 
 getColorBtn.addEventListener("click", getColors)
 colorBlocks.addEventListener("click", copyHex)
@@ -42,6 +43,11 @@ function copyHex(event) {
     const toClipboard = innerHTML ? innerHTML : ariaLabel
 
     navigator.clipboard.writeText(toClipboard)
-        .then(() => alert(`${toClipboard} copied`))
+        .then(() => {
+            alertDiv.style.display = "flex"
+            alertDiv.innerHTML = `<p>${toClipboard} copied to clipboard</p>`
+
+            setTimeout(() => alertDiv.style.display = "none", 1500)
+        })
         .catch(err => console.log(err))
 }
