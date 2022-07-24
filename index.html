@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div class="header-container">
+                    <input type="color" id="color-picker">
+                    <select name="color-scheme" id="color-scheme">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button id="get-color-scheme-btn">Get color scheme</button>
+                </div>
+                <div id="color-blocks">
+                    <div style="background-color: #F55A5A;"></div>
+                    <div style="background-color: #2B283A;"></div>
+                    <div style="background-color: #FBF3AB;"></div>
+                    <div style="background-color: #AAD1B6;"></div>
+                    <div style="background-color: #A626D3;"></div>
+                </div>
+                <div id="color-names">
+                    <p>#F55A5A</p>
+                    <p>#2B283A</p>
+                    <p>#FBF3AB</p>
+                    <p>#AAD1B6</p>
+                    <p>#A626D3</p>
+                </div>
+            </main>
+        </div>
+            <footer>
+                <p class="footer">Made with 🤍 by <a href="https://github.com/nzabajp" target="_blank">/nzabajp</a></p>
+            </footer>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
