@@ -99,6 +99,7 @@ button {
 #alert {
     position: absolute;
     width: 50%;
+    max-width: 300px;
     height: 10%;
     z-index: 1;
     background-color: #eff2f7;
